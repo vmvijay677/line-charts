@@ -1,0 +1,150 @@
+.task_component {
+    width: 750px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(34, 9, 69, 0.25);
+}
+
+.title {
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0 0 0 3rem;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 36px;
+    margin-left: 3rem;
+}
+
+.gain-loss {
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 3rem;
+}
+
+.title-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.time-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: gray;
+    cursor: pointer;
+    margin-right: 3rem;
+    font-size: 18px;
+}
+
+.close-button {
+    cursor: pointer;
+    color: gray;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 1.8rem 0.7rem 0;
+    font-size: 22px;
+    color: gray;
+}
+
+.hl {
+    border: 1px solid #777E90;
+    margin: 0rem 3rem 0 3rem;
+}
+
+.market-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2.2rem;
+    align-items: center;
+    padding-bottom: 2.5rem;
+}
+
+.vl {
+    border: 1px solid #777E90;
+    height: 100px;
+}
+
+#market-cap {
+    font-size: 5px !important;
+    color: #30AF9A;
+}
+
+.graph-image {
+    width: 87%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0.5rem 0 0 3rem;
+    background: transparent;
+}
+
+.graph-time {
+    width: 15%;
+    border: 2px solid rgba(116, 37, 226, 0.5);
+    border-radius: 8px;
+    padding: 8px 0;
+    position: relative;
+    left: 50%;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .task_component {
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .task_component {
+        width: 390px;
+        margin-top: 5rem;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    .price {
+        margin: 0;
+    }
+
+    .title-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .gain-loss {
+        margin: 0;
+    }
+
+    .time-flex {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .graph-image {
+        margin: 0;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .graph-time {
+        width: 28%;
+    }
+
+    .hl {
+        margin: 0rem 1.5rem 0 1.5rem;
+    }
+
+    .market-flex {
+        transform: scale(0.8);
+    }
+
+    .vl {
+        height: 120px;
+    }
+}
